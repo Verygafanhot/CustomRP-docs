@@ -2,57 +2,57 @@
 description: RTFM
 ---
 
-# 🛠 Setting Up
+# 🛠 Configurar
 
-If you experience any errors, check out [FAQ](faq.md).
+Se acontecer algum erro, verifique o [FAQ](faq.md).
 
-Before setting up, make sure you have enabled activity status in Discord settings:
+Antes de começar, verifique se ativou a visibilidade do Status de Atividade nas definições do Discord:
 
-<figure><img src="https://user-images.githubusercontent.com/2225711/188219661-49713f90-fa76-4645-b04a-fc1bc0f029bd.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://user-images.githubusercontent.com/63465951/195862088-05f85566-77fa-4654-a62a-faeaee538a46.jpg" alt=""><figcaption></figcaption></figure>
 
 ## Setup process
 
-* Go to https://discord.com/developers/applications/.
-* Click **New Application** in the upper right corner.
+* Vá a https://discord.com/developers/applications/.
+* Clique em **New Application** no canto superior direito.
 
 ![image](https://user-images.githubusercontent.com/2225711/161050202-c796103d-6712-401e-be96-3f3712512375.png)
 
-* Choose the name for the application, it will be displayed after "Playing" in the status; hit **Create**.
-* Copy the **Application ID** and paste it in Custom RP field **ID**, then press **Connect**. If done correctly, your status in Discord should now say "Playing **\[name of the app]**".
-  * Note: If you have a custom status set (the one with emoji), it will be prioritized over your CustomRP one. It will be seen in the profile popup though.
+* Escolha um nome para a aplicação, este irá aparecer após o A Jogar: no status; Clique em **Create**.
+* Copie o **Application ID** e cole-o na barra do CustomRP **ID**, e clique em **Conectar**. Se isto for feito corretamente, o seu status no Discord deve aparecer como "Jogando **\[nome do app]**".
+  * Nota: Se tiveres o teu status customizado ativado (o que tem os emojis), vai ser periorizado em vez do CustomRP. Mas vai ser visto no seu perfil de qualquer forma.
 
 ![image](https://user-images.githubusercontent.com/2225711/161050341-8169af53-5d3f-44d6-b745-cc711e8d1476.png)
 
-* On your application's page, navigate to Rich Presence -> Art Assets and upload at least one image under Rich Presence Assets if you want to use them. In CustomRP, there is a handy **Upload Assets** button in File menu (you can also use Ctrl+U) that will take you there if your ID field is set up properly.
-  * Alternatively, you can just insert a URL to the image in the **Key** field.
-  * Note: While you can name your asset with any name up to 999 symbols, the API will only accept names with 256 symbols max.
-* Navigate to Visualizer page to set up fields **State, Details, Large Image Key, Large Image Text, Small Image Key, Small Image Text, Party Size, Party Max**. All of those are optional.
-* After you've found the setup that pleases you, copy the values into CustomRP's corresponding fields.
-  * Tip: You can hover over almost any control in the app (including labels line **Details**) and it'll give you a tooltip!
-* If you want to set up buttons as well, fill in both Text and URL fields.
-  * Note: When you will click on the buttons in your own presence, they will not work, but don't worry, they will work for everyone else. It's a problem on Discord's side.
-* Hit **Update Presence** (or **Connect** if you aren't already connected).
-* Congratulations, you're wonderful!
+  * Na sua página de aplicações, navegue para Rich Presence -> Art Assets e faça upload de pelo menos uma imagem que voçê queira usar. No CustomRP existe um botão de **Carregar Imagens** no menu de Ficheiros (também pode ser acessado ao clicar em Ctrl+U), isto irá leva-lo para lá se a barra de ID estiver preenchida corretamente.
+  * Alternativamente, pode simplesmente adicionar um Link para a imagem na sua respetiva barra.
+  * Nota: Enquanto você pode chamar a sua imagem até 999 caracteres, a API irá apenas aceitar no máximo 256.
+* Navegue para o **Visualizer** e insira o que quiser nas barras **State, Details, Large Image Key, Large Image Text, Small Image Key, Small Image Text, Party Size, Party Max**. Todos eles são opcionais.
+* Após terminar de configurar a Presença ao seu gosto copie-os para as barras correspondentes no CustomRP.
+  * Dica: Pode por o rato em cima de quase qualquer coisa na aplicação (incluindo a palavra **Details**) e vai-te aparecer o que ele faz!
+* Se também quiser configurar os botões, preencha as barras de **Botão** e **URL**.
+  * Nota: Quando você clicar nos botões da sua própria presença, eles não vão funcionar, mas não se preocupe pois eles irão funcionar para toda a gente. É apenas um problema com o Discord.
+* Clique em **Atualizar Presença** (ou **Conectar** se já não estiver conectado).
+* E parabéns!, Você agora é incrível!
 
-### I use more than one Discord client, what do I do?
+### Eu uso mais que um cliente do Discord, o que eu faço?
 
-If you have more than one Discord client and you wish your presence to show up on a different account from the one app chose automatically, please press **Disconnect**, then hold Ctrl+Shift keys on your keyboard and press **Connect**. A window with a number input will pop up, put a number 1, close the window, and press **Connect** again, without Ctrl+Shift. In case it's a wrong account again, try number 0, then 2 and so on up until 9.
+Se você tiver mais que um cliente do Discord e gostaria que a presença aparecesse diferente de uma conta para a outra, clique em **Disconectar**, e prima Ctrl+Shift no seu teclado e clique em **Conectar**. Uma janela com um número irá aparecer, insira o número 1, feche a janela e clique em **Conectar** outra vez, sem premir Ctrl+Shift. Caso seja uma conta inválida, tente o número 0, depois 2 até 9.
 
-Please note that if you have multiple Discord clients run on startup, pipe number assigned to each client might not be persistent from boot to boot and can change depending on which client started first. To prevent that, you can either start additional clients manually, or use Windows Task Scheduler to delay the startup of the clients.
+Por favor tenha em atenção que ter vários clientes do Discord a abrir ao iniciar do windows, o número da "Pipe" para cada cliente pode não ser sempre o mesmo e pode trocar dependendo do cliente que abriu primeiro. Para resolver isso, você pode abri-los manualmente ou usar o "Programador de Tarefas" do Windows para atrasar a abertura de clientes.
 
-If you have 2 accounts that you use at the same time and want for each of them to have a different presence, then follow these steps:
+Se você tiver 2 contas que você use ao mesmo tempo e gostaria que cada uma delas tivesse uma presença diferente então siga estes passos:
 
-* Set up your main account first with the instructions above.
-* Grab the latest **portable (.zip)** version of CustomRP (either from [website](https://www.customrp.xyz) or [GitHub releases page](https://github.com/maximmax42/Discord-CustomRP/releases/latest)) and unpack it anywhere.
-  * This only works with versions 1.16 and older.
-* Open `Start Second Instance.bat` or create a shortcut to CustomRP.exe with an argument `--second-instance` (or `-2`).
-* Set up the program the same way you did your main instance.
-  * Tip: If you already have a preset you would want to use with your second instance, you can edit the bat file or the shortcut to include the path to the preset. Example: `CustomRP.exe -2 "C:\Some Folder\preset.crp"` (quotation marks around the path are necessary if the path has spaces in it).
-* Before connecting, change the pipe as described earlier and connect.
+* Prepare a sua conta principal primeiro com as instruções indicadas acima.
+* Transfira a última versão do **portable (.zip)** do CustomRP (tanto do website [Website](https://www.customrp.xyz) ou [A Página do GitHub](https://github.com/maximmax42/Discord-CustomRP/releases/latest)) e deszipeo em qualquer lado.
+  * Isto apenas funciona na versão 1.16+.
+* Abra `Start Second Instance.bat` ou crie um atalho do CustomRP.exe com o argumento `--second-instance` (ou `-2`).
+* Configure o programa da mesma forma que você configurou a sua instância principal mas com as mudanças que você quiser.
+  * Dica: Se você já tiver um preset e gostaria de o usar com a sua segunda instância, você pode editar o ficheiro .bat ou o atalho para incluir o endereço do preset. Exemplo: `CustomRP.exe -2 "C:\PresetsFixes\preset.crp"` (aspas ao redor do caminho são necessárias se o caminho tiver espaços nele).
+* Antes de conectar, mude a "Pipe" como descrito antes e conecte.
 
-If you use 3 or more accounts at the same time, then... why? But also if enough of you will nag me, I'll add support for using more instances.
+Se você usar 3 ou mais contas ao mesmo tempo... porquê? Mas se várias pessoas me vierem chatear a cabeça, eu posso adicionar suporte para mais instâncias.
 
-## Notes
+## Notas
 
-* If you don't want to set up small or large image, leave all related fields in the program blank.
-* If large image is not set, small image settings will be ignored.
+* Se você não quiser configurar uma imagem grande ou pequena, deixe essas barras brancas.
+* Se a imagem grande não estiver configurada, as definições da imagem pequena serão ignoradas.
