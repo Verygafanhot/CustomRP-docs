@@ -1,3 +1,3 @@
-# ⭐ Credits
+# ⭐ Créditos
 
-Translated by \[put your name here].
+Traduzido por: [Verygafanhot](https://verygafanhot.carrd.co/#tos-en).
