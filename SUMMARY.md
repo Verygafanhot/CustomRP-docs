@@ -1,6 +1,6 @@
-# Table of contents
+# Índice
 
-* [🏠 Home](README.md)
-* [🛠 Setting Up](setting-up.md)
+* [🏠 Menu](README.md)
+* [🛠 Configurar](setting-up.md)
 * [❓ FAQ](faq.md)
-* [⭐ Credits](credits.md)
+* [⭐ Créditos](credits.md)
